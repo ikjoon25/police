@@ -1,0 +1,335 @@
+<!DOCTYPE HTML>
+<html lang='ko'>
+<head>
+	<title> </title>
+	<meta charset='utf-8'>
+	<meta name='Viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.6'>
+	<meta name='Title' content='police'>
+	<meta name='Subject' content='police'>
+	<meta name='Keywords' content='경찰청'>
+	<meta name='Author' content='ikjoon'>
+	<meta name='Publisher' content='ikjoon'>
+	<meta name='Description' content=''>
+	<meta name='Author-Date' content=''>
+	<meta name='Copyright' content=''>
+	<meta name='Robots' content='index,follow'>
+
+
+	<link rel='stylesheet' href='css/reset.css'>
+	<link rel='stylesheet' href='css/style01.css'>
+
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<script src='js/lib/jquery-1.12.4.min.js'></script>
+	<script src='js/lib/jquery.easing.1.3.js'></script>
+	<script src='js/lib/prefixfree.min.js'></script>
+	<script src='js/lib/modernizr-custom.js'></script>
+
+
+	<!--[if (lte IE 9)]>
+		<script src='js/lib/IE9.js'></script>
+	<![endif]-->
+
+	<!--[if (lte IE 8)]>
+		<script src='js/lib/html5shiv.min.js'></script>
+		<link rel='stylesheet' href='#'>
+	<![endif]-->
+
+	<!--[if (lte IE 7)]>
+		<link rel='stylesheet' href='#'>
+	<![endif]-->
+
+</head>
+<body>
+	<ul id="skip">
+		<li><a href="#header">헤더 바로가기</a></li>
+		<li><a href="#nav">메뉴 바로가기</a></li>
+		<li><a href="#content">내용 바로가기</a></li>
+	</ul>
+	<div id="wrap">
+		<div id="header" class="header">
+			<div class="container">
+				<h1 class="ir_pm logo"><a href="index.html">로고</a></h1>
+				<ul class="gnb">
+					<li><a href="#"><img src="../Police/img/banner_taegeukgi.png" alt="태극기" title="국가상징 알아보기"></a></li>
+					<li class="guk"><a href="#">국가상징 <br> 알아보기</a></li>
+					<li><a href="#"><img src="../Police/img/banner_govindex.png" alt="보다나은정부" title="보다나은정부"></a></li>
+					<li><a href="#"><img src="../Police/img/go-korea.png" alt="힘내라대한민국" title="힘내라대한민국"></a></li>
+				</ul>
+				<div class="menu-zoom">
+					<div class="lang-chang">
+						<a href="#" class="btn-eng" title="영문홈페이지">
+							<span>ENGLISH</span>
+						</a>
+						<ul>
+							<li><a href="#" class="bnt-zoomout" title="화면축소"></a></li>
+							<li><a href="#" class="bnt-zoomset" title="기본크기"><span>가</span></a></li>
+							<li><a href="#" class="bnt-zoomin" title="화면축소"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="nav">
+			<div class="container">
+				<a href="#"><span class="nav_icon_1 ir_pm">menu</span></a>
+				<ul id="one_step">
+					<li class="menu1"><a href="#" class="sub_menus">알림/소식</a></li>
+					<li class="menu2"><a href="#" class="sub_menus">소통/공감</a></li>
+					<li class="menu3"><a href="#" class="sub_menus">신고/지원</a></li>
+					<li class="menu4"><a href="#" class="sub_menus">정보공개</a></li>
+					<li class="menu5"><a href="#" class="sub_menus">법령/정책</a></li>
+					<li class="menu6"><a href="#" class="sub_menus">기관소개</a></li>
+					<li class="menu7"><a href="#" class="sub_menus">ENGLISH</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="banner">
+			<div class="container">
+				<h2><strong>열린 행정</strong>"으로 시민과"<strong>함께하는</strong><br>따뜻한<strong>경찰</strong>이 되겠습니다.</h2>
+			</div>
+		</div>
+		<div class="sub_nav">
+			<div class="container">
+				<a href="indexEN.html" id="homeButton"></a>
+				<ul class="sub_nav_box">
+					<li><a href="">알림/소식<span class="arrow_icon"></span></a></li>
+					<li><a href="">알림<span class="arrow_icon"></span></a></li>
+					<li><a href="" class="active">공지사항<span class="arrow_icon"></span></a></li>
+				</ul>
+				<div class="function_box">
+					<a class="copy" href="#"></a>
+					<a class="print" href="#"></a>
+				</div>
+			</div>
+		</div>
+		<div class="page_title">
+			<div class="container">
+				<h1>공지사항</h1>
+				<a class="ir_pm goto_i" href="#">이전</a>
+				<a class="ir_pm goto_r" href="#">다음</a>
+			</div>
+		</div>
+		<div class="search_box">
+			<div class="container">
+				<select name="searchOption" id="searchOption"></select>
+				<label for="searchCont"></label>
+				<input id="searchCont" type="text" placeholder="검색어를 입력하세요">
+				<button type="submit" class="btn_search">검색</button>
+				<button type="button" class="btn_reset">초기화</button>
+			</div>
+		</div>
+		<div class="cont_box">
+			<div class="container">
+				<div class="view_option">
+					<div class="view_page">
+						<span class="entire_c">총 게시물<em>638</em>건</span>
+						<span>현재 페이지<em><strong class="present_p">1</strong>/ <strong class="whole_p">64</strong></em></span>
+					</div>
+					<div class="view_num">
+						<label for="rowPerPage">페이지당 목록</label>
+						<select name="rowPerPage" id="rowPerPage"></select>
+						<button type="submit">변경</button>
+					</div>
+				</div>
+				<table class="cont_table">
+					<caption>공지사항</caption>
+					<tbody>
+						<tr>
+							<th class="w_80">순번</th>
+							<th class="w_280">제목</th>
+							<th>파일</th>
+							<th class="w_240">부서명</th>
+							<th>등록일</th>
+							<th>조회수</th>
+						</tr>
+						<tr>
+							<td>638</td>
+							<td>
+								<a href="#">경찰청 감사관(개방형 직위)공개모집</a>
+							</td>
+							<td class="file_y"></td>
+							<td>본청 경무인사기획 인사</td>
+							<td>2021-10-01</td>
+							<td>139</td>
+						</tr>
+						<tr>
+							<td>637</td>
+							<td>
+								<a href="#">2021년 하반기 퇴직공무원 정부포상 대상자 공개검증 알림</a>
+							</td>
+							<td class="file_y"></td>
+							<td>본청 경무인사기획 인사</td>
+							<td>2021-09-24</td>
+							<td>444</td>
+						</tr>
+						<tr>
+							<td>636</td>
+							<td>
+								<a href="#">치안정책리뷰 제72호 발간 알림</a>
+							</td>
+							<td class="file_y"></td>
+							<td>경찰대학 치안 정책연구소</td>
+							<td>2021-09-06</td>
+							<td>5514</td>
+						</tr>
+						<tr>
+							<td>635</td>
+							<td>
+								<a href="#">치안정책연구 제35권 제4호 논문 모집 공고</a>
+							</td>
+							<td class="file_y"></td>
+							<td>경찰대학 치안 정책연구소</td>
+							<td>2021-09-02</td>
+							<td>283</td>
+						</tr>
+						<tr>
+							<td>634</td>
+							<td>
+								<a href="#">숨겨진 불법무기류,지금 신고하세요</a>
+							</td>
+							<td class="file_y"></td>
+							<td>본청 생활안전 생활질서</td>
+							<td>2021-09-01</td>
+							<td>677</td>
+						</tr>
+						<tr>
+							<td>633</td>
+							<td>
+								<a href="#">제23회 경비지도사 자격시험 시행계획 공고</a>
+							</td>
+							<td class="file_y"></td>
+							<td>본청 생활안전 범죄예방정책과</td>
+							<td>2021-08-06</td>
+							<td>1668</td>
+						</tr>
+						<tr>
+							<td>632</td>
+							<td>
+								<a href="#">제2차 임대형민간투자사업(BTL) 어린이집 시설운영 성과평가 결과 공지</a>
+							</td>
+							<td class="file_y"></td>
+							<td>본청 경무인사기획 복지정책</td>
+							<td>2021-08-03</td>
+							<td>676</td>
+						</tr>
+						<tr>
+							<td>631</td>
+							<td>
+								<a href="#">제10차 임대형민간투자사업(BTL) 어린이집 시설운영 성과평가 결과 공지</a>
+							</td>
+							<td class="file_y"></td>
+							<td>본청 경무인사기획 복지정책</td>
+							<td>2021-08-03</td>
+							<td>477</td>
+						</tr>
+						<tr>
+							<td>630</td>
+							<td>
+								<a href="#">공공기관 청렴도 측정 관련 개인정보 제3자 제공 공고</a>
+							</td>
+							<td class="file_y"></td>
+							<td>본청 감사 감사</td>
+							<td>2021-07-28</td>
+							<td>548</td>
+						</tr>
+						<tr>
+							<td>629</td>
+							<td>
+								<a href="#">경찰청182경찰민원콜센터 무기계약근로자(상담 및 분석) 채용시험 최종 합격자 공고</a>
+							</td>
+							<td class="file_y"></td>
+							<td>본청 기획조정 혁신기획조정</td>
+							<td>2021-07-23</td>
+							<td>1043</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="table_pager">
+					<ul>
+						<li class="active_page"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">6</a></li>
+						<li><a href="#">7</a></li>
+						<li><a href="#">8</a></li>
+						<li><a href="#">9</a></li>
+						<li><a href="#">10</a></li>
+						<li class="next_p ir_pm"><a href="#">next</a></li>
+						<li class="first_p ir_pm"><a href="#">go to first page</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="ref">
+			<div class="container">
+				<div class="ref_btn">
+					<button type="button">부서별 누리집</button>
+				</div>
+				<div class="ref_btn">
+					<button type="button">시·도 경찰청 누리집</button>
+				</div>
+				<div class="ref_btn">
+					<button type="button">부속기관 누리집</button>
+				</div>
+				<div class="ref_btn">
+					<button type="button">연계기관 누리집</button>
+				</div>
+				<div id="moveToTop">
+					<a href="#" class="ir_pm">상단으로 바로가기</a>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="footer_01">
+				<div class="container">
+					<div class="footer_menu">
+						<ul class="user_menu">
+							<li><a href="#">개인정보처리방침</a></li>
+							<li><a href="#">저작권정책</a></li>
+							<li><a href="#">공공데이터 이용정책</a></li>
+							<li><a href="#">문서 보기 프로그램 내려받기</a></li>
+							<li><a href="#">이용안내</a></li>
+							<li><a href="#">정부·지자체 조직도</a></li>
+						</ul>
+						<ul class="sns_menu">
+							<li class="ir_pm youtube" title="youtube"><a href="#">유튜브</a></li>
+							<li class="ir_pm facebook" title="facebook"><a href="#">페이스북</a></li>
+							<li class="ir_pm twitter" title="twitter"><a href="#">트위터</a></li>
+							<li class="ir_pm blog" title="blog"><a href="#">블로그</a></li>
+							<li class="ir_pm instagram" title="instagram"><a href="#">인스타그램</a></li>
+							<li class="ir_pm band" title="naver band"><a href="#">네이버밴드</a></li>
+							<li class="ir_pm kakao" title="kakao"><a href="#">카카오</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer_02">
+				<div class="container">
+					<div class="footer_info">
+						<ul class="info_01">
+							<p class="info_02">copyright©2018 national police agency</p>
+							<p class="info_03">본 홈페이지에 게시판 이메일 주소가 자동 수집되는 것을 거부하며, 이를 위반시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.</p>
+						</ul>
+					</div>
+					<div class="footer_img_links">
+						<div class="qrcode">
+							<img src="./img/footer_qrcode (1).png" alt="qrcode"><span>모바일누리집</span></img>
+						</div>
+						<div class="web_watch">
+							<a href="#" onclick=""><img src="./img/footer_webwatch (1).png" alt="web_watch" title="web_watch"></a>
+						</div>
+						<div class="privacy">
+							<a href="#"><img src="./img/footer_eprivacy.png" alt="eprivacy" title="eprivacy"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
