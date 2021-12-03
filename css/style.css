@@ -20,7 +20,7 @@ body{
 .header{height:70px;}
 .header .container{width:1200px; height:inherit; margin:0 auto;}
 .header .container h1{}
-.header .container h1 a{background:url(../img/header_logo.png) no-repeat; width:161px; height:46px; display:block; margin-top:14px; margin-right:26px; float:left;}
+.header .container h1 a{background:url(../img/mainheader_logo.png) no-repeat; width:161px; height:46px; display:block; margin-top:14px; margin-right:26px; float:left;}
 .header .container #headerImg1{background: url(../img/header_flag.png) no-repeat; display:block; float:left; width:100px; height:32px; background-size: 48px; margin-top:21px; margin-left:21px;}
 .header .container #headerImg1 span{display:block; float:left; width:40px; font-size: 10px; margin-left: 60px; font-weight: bold; color:#fff;}
 .header .container #headerImg2{background:url(../img/header_gov.png) no-repeat; display:block; width:107px; height:41px; float:left; margin-top:16px; margin-left:21px;}
