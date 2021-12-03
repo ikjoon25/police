@@ -9,7 +9,7 @@
 	<meta name='Keywords' content='경찰청'>
 	<meta name='Author' content='ikjoon'>
 	<meta name='Publisher' content='ikjoon'>
-	<meta name='Description' content=''>
+	<meta name='Description' content='경찰청 공지사항'>
 	<meta name='Author-Date' content=''>
 	<meta name='Copyright' content=''>
 	<meta name='Robots' content='index,follow'>
@@ -21,11 +21,9 @@
 	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-	<script src='js/lib/jquery-1.12.4.min.js'></script>
-	<script src='js/lib/jquery.easing.1.3.js'></script>
-	<script src='js/lib/prefixfree.min.js'></script>
-	<script src='js/lib/modernizr-custom.js'></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+	<script src="./js/script.js" defer></script>
 
 
 	<!--[if (lte IE 9)]>
@@ -51,12 +49,12 @@
 	<div id="wrap">
 		<div id="header" class="header">
 			<div class="container">
-				<h1 class="ir_pm logo"><a href="index.html">로고</a></h1>
+				<h1 class="logo"><a href="index.html"></a></h1>
 				<ul class="gnb">
-					<li><a href="#"><img src="../Police/img/banner_taegeukgi.png" alt="태극기" title="국가상징 알아보기"></a></li>
+					<li><a href="#"><img src="./img/header_flag.png" alt="태극기" title="국가상징 알아보기"></a></li>
 					<li class="guk"><a href="#">국가상징 <br> 알아보기</a></li>
-					<li><a href="#"><img src="../Police/img/banner_govindex.png" alt="보다나은정부" title="보다나은정부"></a></li>
-					<li><a href="#"><img src="../Police/img/go-korea.png" alt="힘내라대한민국" title="힘내라대한민국"></a></li>
+					<li><a href="#"><img src="./img/header_gov.png" alt="보다나은정부" title="보다나은정부"></a></li>
+					<li><a href="#"><img src="./img/header_kor.png" alt="힘내라대한민국" title="힘내라대한민국"></a></li>
 				</ul>
 				<div class="menu-zoom">
 					<div class="lang-chang">
@@ -76,14 +74,150 @@
 			<div class="container">
 				<a href="#"><span class="nav_icon_1 ir_pm">menu</span></a>
 				<ul id="one_step">
-					<li class="menu1"><a href="#" class="sub_menus">알림/소식</a></li>
-					<li class="menu2"><a href="#" class="sub_menus">소통/공감</a></li>
-					<li class="menu3"><a href="#" class="sub_menus">신고/지원</a></li>
-					<li class="menu4"><a href="#" class="sub_menus">정보공개</a></li>
-					<li class="menu5"><a href="#" class="sub_menus">법령/정책</a></li>
-					<li class="menu6"><a href="#" class="sub_menus">기관소개</a></li>
-					<li class="menu7"><a href="#" class="sub_menus">ENGLISH</a></li>
-				</ul>
+					<li class="menu1">
+						<a href="#" class="sub_menus">알림/소식</a>
+						<dl>
+							<dt><a href="#">알림</a></dt>
+							<dd><a href="index01.html">- 공지사항</a></dd>
+							<dd><a href="#">- 보도자료</a></dd>
+							<dd><a href="#">- 사실확인</a></dd>
+							<dd><a href="#">- 채용공고</a></dd>
+							<dd><a href="#">- 입찰공고</a></dd>
+							<dt><a href="#"></a>소식</dt>
+							<dd><a href="#">- 홍보콘텐츠</a></dd>
+							<dt><a href="#"></a>정책홍보실</dt>
+							<dd><a href="#">- 목표(비전)</a></dd>
+							<dd><a href="#">- 정책실명제</a></dd>
+							<dd><a href="#">- 수사구조개혁</a></dd>
+							<dd><a href="#">- 인권경찰</a></dd>
+							<dt><a href="#"></a>경찰청 인권위원회</dt>
+							<dd><a href="#">- 위원장 인사말</a></dd>
+							<dd><a href="#">- 인권위원 프로필</a></dd>
+							<dd><a href="#">- 활동소식</a></dd>
+						</dl>
+					</li>
+					<li class="menu2">
+						<a href="#" class="sub_menus">소통/공감</a>
+						<dl>
+							<dt><a href="#">생활정보</a></dt>
+							<dd><a href="#">- 주요뉴스</a></dd>
+							<dt><a href="#">적극행정</a></dt>
+							<dd><a href="#">- 제도소개</a></dd>
+							<dd><a href="#">- 국민참여</a></dd>
+							<dd><a href="#">- 적극행정 자료실</a></dd>
+							<dd><a href="#">- 적극행정 우수공무원</a></dd>
+							<dt><a href="#">소통게시판</a></dt>
+							<dd><a href="#">- 자유게시판</a></dd>
+							<dt><a href="#">추모관</a></dt>
+							<dd><a href="#">- 순직경찰관추모</a></dd>
+							<dd><a href="#">- 경찰영웅</a></dd>
+							<dd><a href="#">- 경참기념공원</a></dd>
+							<dd><a href="#">- 추모관공지</a></dd>
+							<dd><a href="#">- 행사갤러리</a></dd>
+						</dl>
+					</li>
+					<li class="menu3">
+						<a href="#" class="sub_menus">신고/지원</a>
+						<dl>
+							<dt><a href="#">범죄신고/상담</a></dt>
+							<dd><a href="#">- 경찰민원포털</a></dd>
+							<dd><a href="#">- 가정,학교,성폭력 등 신고/상담</a></dd>
+							<dd><a href="#">- 스마트 국민제보</a></dd>
+							<dd><a href="#">- 유실물 통합포털</a></dd>
+							<dd><a href="#">- 안전신문고</a></dd>
+							<dt><a href="#">사이버안전지킴이</a></dt>
+							<dd><a href="#">- 사이버범죄 신고/상담</a></dd>
+							<dd><a href="#">- 사이버범죄 예방교육 신청</a></dd>
+							<dd><a href="#">- 인터넷 사기 의심 전화계좌번호 조회</a></dd>
+							<dd><a href="#">- 사이버범죄 예방홍보물</a></dd>
+							<dt><a href="#">안심 서비스</a></dt>
+							<dd><a href="#">- 순찰장소 신청</a></dd>
+							<dt><a href="#">치안정보/지원</a></dt>
+							<dd><a href="#">- 회복적경찰활동 및 범죄피해자 지원</a></dd>
+						</dl>
+					</li>
+					<li class="menu4">
+						<a href="#" class="sub_menus">정보공개</a>
+						<dl>
+							<dt><a href="#">정보공개제도</a></dt>
+							<dd><a href="#">- 제도안내</a></dd>
+							<dd><a href="#">- 법령/서식</a></dd>
+							<dd><a href="#">- 수수료안내</a></dd>
+							<dd><a href="#">- 접수처안내</a></dd>
+							<dd><a href="#">- 정보공개편람/청구</a></dd>
+							<dd><a href="#">- 정보목록</a></dd>
+							<dt><a href="#">재정현황</a></dt>
+							<dd><a href="#">- 사업설명자료</a></dd>
+							<dd><a href="#">- 국회심의과정</a></dd>
+							<dd><a href="#">- 예산확정현황</a></dd>
+							<dd><a href="#">- 예산집행현황</a></dd>
+							<dt><a href="#">사전공보공표</a></dt>
+							<dd><a href="#">- 사전정보공표목록</a></dd>
+							<dd><a href="#">- 정보공개자료실</a></dd>
+							<dd><a href="#">- 비공개세부기준</a></dd>
+							<dt><a href="#">공공데이터</a></dt>
+							<dd><a href="#">- 경찰백서</a></dd>
+							<dd><a href="#">- 공공데이터 개방</a></dd>
+							<dd><a href="#">- 경찰통계자료</a></dd>
+							<dd><a href="#">- 경찰범죄통계</a></dd>
+							<dd><a href="#">- 경찰접수 고통사고 현황</a></dd>
+							<dd><a href="#">- 통계연보</a></dd>
+						</dl>
+					</li>
+					<li class="menu5">
+						<a href="#" class="sub_menus">법령/정책</a>
+						<dl>
+							<dt><a href="#">법령정보</a></dt>
+							<dd><a href="#">- 입법예고</a></dd>
+							<dd><a href="#">- 행정예고</a></dd>
+							<dd><a href="#">- 개정법령</a></dd>
+							<dd><a href="#">- 소관법령</a></dd>
+							<dd><a href="#">- 훈령예규</a></dd>
+							<dd><a href="#">- 법령검색</a></dd>
+							<dd><a href="#">- 판례검색</a></dd>
+							<dt><a href="#">국회정보공개</a></dt>
+							<dd><a href="#">- 국회제출자료</a></dd>
+							<dd><a href="#">- 치안정책자료</a></dd>
+							<dd><a href="#">- 국회현장</a></dd>
+							<dt><a href="#">규제개혁</a></dt>
+							<dd><a href="#">- 추진과제</a></dd>
+							<dd><a href="#">- 규제혁신</a></dd>
+							<dd><a href="#">- 규제개혁문고</a></dd>
+							<dd><a href="#">- 규제개혁포털</a></dd>
+							<dd><a href="#">- 국민규제입증요청</a></dd>
+						</dl>
+					</li>
+					<li class="menu6">
+						<a href="#" class="sub_menus">기관소개</a>\
+						<dl>
+							<dt><a href="#">열린청장실</a></dt>
+							<dd><a href="#">- 청장소개</a></dd>
+							<dd><a href="#">- 청장동정</a></dd>
+							<dd><a href="#">- 청정과의 대화</a></dd>
+							<dd><a href="#">- 역대청장소개</a></dd>
+							<dt><a href="#">조직안내</a></dt>
+							<dd><a href="#">- 조직구성도</a></dd>
+							<dd><a href="#">- 부서별연락처</a></dd>
+							<dd><a href="#">- 전국경찰관서안내</a></dd>
+							<dd><a href="#">- 관광결창</a></dd>
+							<dt><a href="#">경찰의이해</a></dt>
+							<dd><a href="#">- 포돌이/포순이</a></dd>
+							<dd><a href="#">- 상징</a></dd>
+							<dd><a href="#">- 계급과역할</a></dd>
+							<dd><a href="#">- 장비소개</a></dd>
+							<dd><a href="#">- 경찰현장</a></dd>
+							<dd><a href="#">- 서비스현장</a></dd>
+							<dt><a href="#">경찰역사</a></dt>
+							<dd><a href="#">- 민주인권민생경찰의뿌리</a></dd>
+							<dd><a href="#">- 경찰역사순례길</a></dd>
+							<dd><a href="#">- 역사자료실</a></dd>
+							<dd><a href="#">- 경찰조직연혁</a></dd>
+						</dl>
+					</li>
+					<li class="menu7">
+						<a href="#" class="sub_menus">ENGLISH</a>
+					</li>
+				</ul>	
 			</div>
 		</div>
 		<div id="banner">
@@ -114,7 +248,12 @@
 		</div>
 		<div class="search_box">
 			<div class="container">
-				<select name="searchOption" id="searchOption"></select>
+				<select name="searchOption" id="searchOption">
+					<option>--검색 선택--</option>
+					<option>제목</option>
+					<option>내용</option>
+					<option>부서명</option>
+				</select>
 				<label for="searchCont"></label>
 				<input id="searchCont" type="text" placeholder="검색어를 입력하세요">
 				<button type="submit" class="btn_search">검색</button>
@@ -130,7 +269,13 @@
 					</div>
 					<div class="view_num">
 						<label for="rowPerPage">페이지당 목록</label>
-						<select name="rowPerPage" id="rowPerPage"></select>
+						<select name="rowPerPage" id="rowPerPage">
+							<option value="10">10</option>
+							<option value="12">12</option>
+							<option value="15">15</option>
+							<option value="50">50</option>
+							<option value="500">500</option>
+						</select>
 						<button type="submit">변경</button>
 					</div>
 				</div>
@@ -318,10 +463,10 @@
 					</div>
 					<div class="footer_img_links">
 						<div class="qrcode">
-							<img src="./img/footer_qrcode (1).png" alt="qrcode"><span>모바일누리집</span></img>
+							<img src="./img/footer_qrcode.png" alt="qrcode"><span>모바일누리집</span></img>
 						</div>
 						<div class="web_watch">
-							<a href="#" onclick=""><img src="./img/footer_webwatch (1).png" alt="web_watch" title="web_watch"></a>
+							<a href="#" onclick=""><img src="./img/footer_webwatch.png" alt="web_watch" title="web_watch"></a>
 						</div>
 						<div class="privacy">
 							<a href="#"><img src="./img/footer_eprivacy.png" alt="eprivacy" title="eprivacy"></a>
